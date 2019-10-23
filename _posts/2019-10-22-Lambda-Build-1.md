@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build 1 -
+title: Build 1 - Death and Statistics
 subtitle: Lambda School - Data Science 9
 image: /img/there-there-skeleton.png
 ---
@@ -21,16 +21,19 @@ Now, when I made these charts, they actually only show the top five, with a sixt
 
 So now let's take a look at the same age range, but for all years.
 
-![Pie-San-Diego](/img/Example-pie-San-Diego-all-years.png){: .center-block :}
+![Pie-San-Diego](/img/Example-pie-San-Diego-all-years.png)
+
 In this case we see something a bit more interesting. For one, three of the top five causes of death are vehicle related. For two, 52 other things account for 85% of all deaths. It's pretty clear that despite trying to make it legible, when it comes to larger datasets this pie chart really isn't cutting it.
 
 
 ### Graphs
 ![Graph-San-Diego](/img/San-Diego-Graph.png)
+
 Changing from people in their twenties we'll now see infants. Fortunately, these have some of the lowest rates of death out of any age range that I could find. This graph doesn't say any more than which year each number died, but just so you know there were very few types of death for these with nearly all of them being SIDS. Additionally because the number of dead is so low compared to the population (1093 dead out of a total of 39,396, 2.77%) and the sum is bouncing around the graph we can assume rather safely that there isn't a trend going on; infants aren't dying any faster across the years, I'd call that a win.
 
 ### Seaborn Scatterplot
 ![SNS-San_Diego](/img/Seaborn-County Scatter-Plot.png)
+
 Lastly here I have a scatterplot from seaborn. This shows each of the different counties in California and graphs each of the numbers of death - pre-sorted by age group - and plots them on the graph. In the end it doesn't really show anything we wouldn't have guessed though. A higher population means more death.
 
 
