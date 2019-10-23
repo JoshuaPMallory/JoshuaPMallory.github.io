@@ -26,7 +26,7 @@ In this case we see something a bit more interesting. For one, three of the top 
 
 
 ### Graphs
-![Graph-San-Diego](/imd/San-Diego-Graph.png)
+![Graph-San-Diego](/img/San-Diego-Graph.png)
 Changing from people in their twenties we'll now see infants. Fortunately, these have some of the lowest rates of death out of any age range that I could find. This graph doesn't say any more than which year each number died, but just so you know there were very few types of death for these with nearly all of them being SIDS. Additionally because the number of dead is so low compared to the population (1093 dead out of a total of 39,396, 2.77%) and the sum is bouncing around the graph we can assume rather safely that there isn't a trend going on; infants aren't dying any faster across the years, I'd call that a win.
 
 ### Seaborn Scatterplot
