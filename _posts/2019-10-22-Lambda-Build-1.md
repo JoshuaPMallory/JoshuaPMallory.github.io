@@ -13,7 +13,7 @@ By using data gathered from the CDC on deaths in California I intend to give a c
 
 I intend to make this interactive, as that'll allow viewers the best possible chance at an unbiased answer, but for now all I have are these graphs.
 
-![Pie-San-Diego](img\Example-pie-San-Diego.png)
+![Pie-San-Diego](/img/Example-pie-San-Diego.png)
 
 Starting off with my first donut chart shows that for people aged 20 to 24 in San Diego for the latest year in the dataset - 2016 - we have accidental poisoning at the top with 22%. However, two of the major causes of death on this chart are actually different types of suicides accounting for 40% of the deaths. If we wanted to focus on the firearms in the chart, we'd similarly see that it accounts for 36%.
 
@@ -21,16 +21,16 @@ Now, when I made these charts, they actually only show the top five, with a sixt
 
 So now let's take a look at the same age range, but for all years.
 
-![Pie-San-Diego](img\Example-pie-San-Diego-all-years.png){: .center-block :}
+![Pie-San-Diego](/img/Example-pie-San-Diego-all-years.png){: .center-block :}
 In this case we see something a bit more interesting. For one, three of the top five causes of death are vehicle related. For two, 52 other things account for 85% of all deaths. It's pretty clear that despite trying to make it legible, when it comes to larger datasets this pie chart really isn't cutting it.
 
 
 ### Graphs
-![Graph-San-Diego](imd\San-Diego-Graph.png)
+![Graph-San-Diego](/imd/San-Diego-Graph.png)
 Changing from people in their twenties we'll now see infants. Fortunately, these have some of the lowest rates of death out of any age range that I could find. This graph doesn't say any more than which year each number died, but just so you know there were very few types of death for these with nearly all of them being SIDS. Additionally because the number of dead is so low compared to the population (1093 dead out of a total of 39,396, 2.77%) and the sum is bouncing around the graph we can assume rather safely that there isn't a trend going on; infants aren't dying any faster across the years, I'd call that a win.
 
 ### Seaborn Scatterplot
-![SNS-San_Diego](Seaborn-County Scatter-Plot.png)
+![SNS-San_Diego](/img/Seaborn-County Scatter-Plot.png)
 Lastly here I have a scatterplot from seaborn. This shows each of the different counties in California and graphs each of the numbers of death - pre-sorted by age group - and plots them on the graph. In the end it doesn't really show anything we wouldn't have guessed though. A higher population means more death.
 
 
@@ -38,4 +38,4 @@ Lastly here I have a scatterplot from seaborn. This shows each of the different 
 
 
 
-![Skeleton](img\dont-give-up-skeleton.png){: .center-block :}
+![Skeleton](/img/dont-give-up-skeleton.png){: .center-block :}
