@@ -2,54 +2,89 @@
 layout: post
 title: Build 1 - Death and Statistics
 subtitle: Lambda School - Data Science 9
+gh-repo: JoshuaPMallory/Unit_1_Build
+gh-badge: [fork]
 image: /img/there-there-skeleton.png
+tags: [Data Science, Lambda School]
 ---
 
-This is my first project for Lambda School's monthly build week. I think the media presents a hostile view of life in the US; that shootings are happening more frequently than ever, that politicians and corporations are manipulating us, and that an excess diet of [eggs](https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs 'Physicians Committee: Health Concerns with Eggs') is going to give us cancer. Or, wait... [I guess they're good for you now](https://health.clevelandclinic.org/i-have-cancer-what-should-i-eat-2/ 'Cleveland Clinic: I Have Cancer — What Should I Eat?'). It sounds like [other countries](https://www.washingtonpost.com/world/2019/06/04/china-warns-against-traveling-us-citing-shootings-robberies-theft/ 'Washington Post: China warns against traveling to the U.S., citing \‘shootings, robberies and theft\’') are taking note as well. But I don't think death is nearly as common or likely as they believe.
+This is my first project for Lambda School's monthly build week.
 
-For now I'll look at just one of these problems. By using data gathered from the CDC on California deaths I intend to give a clear view on death - albeit a subset of the larger USA - it's most common causes, and it's general probability against the surviving population. From what I've read in the past I believe the most likely causes of death are heart related illness and motor-vehicle collisions, and I'll compare that with what I believe most people would worry about; terrorism and homicide. I intend to show whether or not either view is correct.
+I think the media presents a hostile view of life in the US; that shootings are happening more frequently than ever, that politicians and corporations are manipulating us, and that an excess diet of [eggs](https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs 'Physicians Committee: Health Concerns with Eggs') is going to give us cancer. Or, wait... [I guess they're good for you now](https://health.clevelandclinic.org/i-have-cancer-what-should-i-eat-2/ 'Cleveland Clinic: I Have Cancer — What Should I Eat?'). It sounds like [other countries](https://www.washingtonpost.com/world/2019/06/04/china-warns-against-traveling-us-citing-shootings-robberies-theft/ 'Washington Post: China warns against traveling to the U.S., citing \‘shootings, robberies and theft\’') are taking note as well.
 
+I don't think death is nearly as common or likely as they believe so I'm going to be look at deaths in my corner of the world to give a general idea of the state of things in the past 17 years. By using data gathered from the CDC on California deaths I intend to give a clear view on death, it's most commonly talked about causes, and it's general probability against the surviving population. From what I've read in the past I believe the most likely causes of death are heart related illness and motor-vehicle collisions, and I'll compare that with what I believe most people would worry about; homicide and terrorism. (Well, I would do terrorism, but there's actually no listed deaths for terrorism in California, so that makes a great start!)
 
-###
-
-
-### Donut charts
-
-I intend to make this interactive, as that'll allow viewers the best possible chance at an unbiased answer, but for now all I have are these graphs.
+I intend to show whether or not either view is correct.
 
 
-![Pie-San-Diego](/img/Example-pie-San-Diego.png)
+### Overview
 
-My first donut chart shows that for people aged 20 to 24 in San Diego for the latest year in the dataset - 2016 - we have accidental poisoning at the top with 22%. However, two of the major causes of death on this chart are actually different types of suicides accounting for 40% of the deaths. If we wanted to focus on the firearms in the chart, we'd similarly see that it accounts for 36%.
+So to start off with I want to show an overview of the general population and their deaths, then show what people would most fear dying by; traumatic deaths.
 
-Now, when I made these charts, they actually only show the top five, with a sixth chunk holding all other values together in order to make the chart legible. Fortunately for this chart, it actually doesn't have any more beyond this, and at 0.02% I'd say that makes a pretty stellar ratio. All in all though, this doesn't really seem to say much.
+![California-overview](/img/California-overview-by-age.png){: .center-block :}
 
-So now let's take a look at the same age range, but for all years.
-
-
-![Pie-San-Diego](/img/Example-pie-San-Diego-all-years.png)
-
-In this case we see something a bit more interesting. For one, three of the top five causes of death are vehicle related. For two, 52 other things account for 85% of all deaths. It's pretty clear that despite trying to make it legible, when it comes to larger datasets this pie chart really isn't cutting it.
+So with this we can see that across all of California the age groups dying the most tend to be in the upper age ranges, and as people get older they die more often. Pretty much what one would expect. The increase looks to be relatively exponential as well. 35 to 44 is barely off the ground compared to everything below it, while 45 to 54 is about double. As I'll show in a later chart, the reason for this appears to largely be due to medical issues rather than traumatic injury, which is again what one might expect.
 
 
-![Pie-San-Diego](/img/San-Diego-1999-2016-85+.png)
+## Deaths by County
 
-Test
+![Seaborn-county-scatter](/img/Seaborn-County-Scatter-Plot.png)
 
-
-### Graphs
-![Graph-San-Diego](/img/San-Diego-Graph.png)
-
-Changing from people in their twenties we'll now see infants. Fortunately, these have some of the lowest rates of death out of any age range that I could find. This graph doesn't say any more than which year each number died, but just so you know there were very few types of death for these with nearly all of them being SIDS. Additionally because the number of dead is so low compared to the population (1093 dead out of a total of 39,396, 2.77%) and the sum is bouncing around the graph we can assume rather safely that there isn't a trend going on; infants aren't dying any faster across the years, I'd call that a win.
-
-### Seaborn Scatterplot
-![SNS-San_Diego](/img/Seaborn-County-Scatter-Plot.png)
-
-Lastly here I have a scatterplot from seaborn. This shows each of the different counties in California and graphs each of the numbers of death - pre-sorted by age group - and plots them on the graph. In the end it doesn't really show anything we wouldn't have guessed though. A higher population means more death.
+While not a surprise, this does show how a population influences the appearance of the data. LA is a pretty big place, but this graph would have you believe people are dropping like flies in comparison to literally any other county! What you don't see though is that LA has a population in the millions, while a place like Trinity come in at just over ten thousand. Have you ever even heard of Trinity county before? Cause that was a new one to me!
 
 
-### In Conclusion
+## Top Five for Age Groups
+
+Overview of Infants >1 y/o in San Diego | Of those, the top 5 causes of Death in 2016
+:-------------------------:|:-------------------------:
+ ![Graph_SD_2016_1](/img/Graph_SD_2016_1.png)|![Donut_SD_2016_1](/img/Donut_SD_2016_1.png)
+
+So, I'd say we have a good sign here. In the most recent year for the dataset we aren't even up to 5 causes of death! And of those, there's only 40 that died, all of which were medical issues with two of them happening prior to birth. If we look at the graph we can also see that it's not really changing much over time. I mean sure, it looks like it's bouncing around but the sums are pretty low compared to what we saw earlier, and they're not increasing at all! Seventeen years and the average is relatively stable. I'd take that as a sign that the majority of these deaths aren't being influenced by anything in particular.
+
+I know dead babies isn't exactly a heartwarming story to talk about but just going by the data that's a pretty stellar ratio. Let me show you a different one to see what I mean.
 
 
+Overview of people 85+ y/o in San Diego | Of those, the top 5 causes of Death in 2016
+:-------------------------:|:-------------------------:
+![Graph_SD_2016_85+](/img/Graph_SD_2016_85+.png) | ![Donut_SD_2016_85+](/img/Donut_SD_2016_85+.png)
 
-![Skeleton](/img/dont-give-up-skeleton.png){: .center-block :}
+In this case we can see not only is there a top five, but that there's a whole 85 other causes of death not included in the list. If I put them all there, this chart would quickly become impossible to read, but on top of that we can see that there's a trend going upwards for people in this age group.
+
+Since this age group is partly unbounded, my guess is that as our medical technology and knowledge gets better we'll simply see a larger part of the population surviving in this range. With a higher population you'll generally see an increase in deaths regardless, even if the technology is better, take that seaborn graph for example. But you want to see some of the common types of death, right? Let's get to it then.
+
+## Common Causes of Death
+
+### Cancer
+![img](/img/Graph_C_Cancer.png)
+BY FAR the biggest cause of death with cancer is lung cancer. Breast cancer is a far second at maybe a fourth that of lung cancer. I reduced the types of cancer here because listing all of them balloons the graph's legend out and it wont really say any more than this does, not unless you want a deeper look that is.
+
+### Heart Failure
+![img](/img/Graph_C_MI.png)
+Now this is a comforting one to see. Well, the trend is anyway. At about 18,000 deaths in 2016 that's still far and away the highest cause of death of any I've looked at here, even if it's trending downward. However, it *is* going down, which is fantastic to see. On a country scale heart disease in general accounts for about 600,000 people, and even on a state scale it's pretty clear that if you've got some fear of death, it should be directed this way.
+
+I don't like exercise any more than most Americans, but clearly we need it. Modern medicine can only go so far before we need to start replacing hearts and veins to keep us going, and what's it matter then if we can't move on our own anymore? I've met people like that in the past, and while it didn't exactly scare me straight, I'm certainly up for a bit of exercise every now and then to keep that from being me.
+
+### Car crashes
+![img](/img/Graph_C_MVC.png)
+This one was actually much lower than I thought it'd be, but maybe that's just the news on the I-5 that's got me thinking that way. That and car crashes are generally pretty scary to be around when it happens, but here we can see that pedestrians getting hit are the highest, with the second highest being a miscellaneous line for unspecified pedestrian collisions. Additionally it looks like the driver tends to get killed more often than passengers, though I think I'd chalk that up to people not really car-pooling too often from what I've seen.
+
+Fortunately for motorcyclists they have a pretty low rate here, so good on you guys!
+
+### Homicide
+![img](/img/Graph_C_Homicide.png)
+And here we see the problem with miscellaneous categories. It looks like there could be a wide variety of things that are all getting thrown into the same thing for ease of paperwork. I'm really not sure how to take this one, but at the very least I can say this one doesn't hold suicides in that category.
+
+### Suicide
+![img](/img/Graph_C_Suicide.png)
+Lastly we see that people's favorite flavor of death is strangulation, though maybe that's related in some way to autoerotic asphyxiation? Either way, it's followed soon after by handguns. I'm actually not sure why someone would choose strangulation personally, I mean, you have to sit around and wait for it to happen at that point, right? I mean I guess shooting yourself isn't much better; you'd leave a mess for your family to clean up!
+
+Not really a joke, actually. My grandma some years ago had to help a friend clean up her husband's body after he shot himself with a shotgun. The police or whoever may take the body, but they aren't going to pick up the chunks or do a deep clean on your carpet. Pretty grizzly to think about, eh? Probably better not doing that to people you ostensibly care about.
+
+
+## In Conclusion
+
+The reason I'm bringing these up like this isn't really to show off all the ways you can die or to be edgy, it's to show how unlikely it is. Even at the upper ranges of 10% with the elderly, there's a significant chunk of the population that actually stands an overwhelming chance of surviving each year. The highest rate of deaths from what we've viewed here come from heart disease, and that's very preventable. I'm certainly not in any position to be critiquing people's lifestyles, and for the most part I don't, but I think if people were really afraid of dying they'd be more fearful of the ways that claim most people. Even saying that though, I know in my case I'm the same way; staring down the barrel of a gun with your family behind you is a much more real threat than a hundred-thousand burgers hardening your arteries.
+
+What I'm getting at here is there's a chance for you to die, but there's more chances for you to live. I'm not going to tell you what you really need to do, but I will suggest that you take responsibility for yourself and your actions and accept that, regardless of the outcome. It's certainly helped me to relax and be alright with where I am in life, even as I'm trying to get somewhere I dream to be. So in the end, remember,
+
+![dontgiveup](/img/dont-give-up-skeleton.png 'don\'t give up, skeleton!'){: .center-block :}
