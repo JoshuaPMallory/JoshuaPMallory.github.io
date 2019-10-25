@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build 1 - Death and Statistics
+title: Death and Statistics
 subtitle: Lambda School - Data Science 9
 gh-repo: JoshuaPMallory/Death_and_Statistics
 gh-badge: [fork]
@@ -37,9 +37,9 @@ Overview of Infants >1 y/o in San Diego | Of those, the top 5 causes of Death in
 :-------------------------:|:-------------------------:
  ![Graph_SD_2016_1](/img/Graph_SD_1.png)|![Donut_SD_2016_1](/img/Donut_SD_2016_1.png)
 
-So, I'd say we have a good sign here. In the most recent year for the dataset we aren't even up to 5 causes of death! And of those, there's only 40 that died, all of which were medical issues with two of them happening prior to birth. If we look at the graph we can also see that it's not really changing much over time. I mean sure, it looks like it's bouncing around but the sums are pretty low compared to what we saw earlier, and they're not increasing at all! Seventeen years and the average is relatively stable. I'd take that as a sign that the majority of these deaths aren't being influenced by anything in particular.
+A pretty good sign. In the most recent year for the dataset we aren't even up to 5 causes of death! And of those, there's only 40 that died, all of which were medical issues with two of them happening prior to birth. If we look at the graph we can also see that it's trending down over time.
 
-I know dead babies isn't exactly a heartwarming story to talk about but just going by the data that's a pretty stellar ratio. Let me show you a different one to see what I mean.
+I know dead babies isn't exactly a heartwarming story to talk about but just going by the data that's a pretty stellar ratio and it's getting better every year.
 
 
 Overview of people 85+ y/o in San Diego | Of those, the top 5 causes of Death in 2016
