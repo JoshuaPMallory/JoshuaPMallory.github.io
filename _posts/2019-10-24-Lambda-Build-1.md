@@ -2,15 +2,13 @@
 layout: post
 title: Build 1 - Death and Statistics
 subtitle: Lambda School - Data Science 9
-gh-repo: JoshuaPMallory/Unit_1_Build
+gh-repo: JoshuaPMallory/Death_and_Statistics
 gh-badge: [fork]
 image: /img/there-there-skeleton.png
 tags: [Data Science, Lambda School]
 ---
 
-This is my first project for Lambda School's monthly build week.
-
-I think the media presents a hostile view of life in the US; that shootings are happening more frequently than ever, that politicians and corporations are manipulating us, and that an excess diet of [eggs](https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs 'Physicians Committee: Health Concerns with Eggs') is going to give us cancer. Or, wait... [I guess they're good for you now](https://health.clevelandclinic.org/i-have-cancer-what-should-i-eat-2/ 'Cleveland Clinic: I Have Cancer — What Should I Eat?'). It sounds like [other countries](https://www.washingtonpost.com/world/2019/06/04/china-warns-against-traveling-us-citing-shootings-robberies-theft/ 'Washington Post: China warns against traveling to the U.S., citing \‘shootings, robberies and theft\’') are taking note as well.
+From my corner of the world in California I think the media presents a hostile view of life; that shootings are happening more frequently than ever, that we're being manipulated by politicians and corporations, and that an excess diet of [eggs](https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs 'Physicians Committee: Health Concerns with Eggs') is going to give us cancer. Or, wait... [I guess they're good for you now](https://health.clevelandclinic.org/i-have-cancer-what-should-i-eat-2/ 'Cleveland Clinic: I Have Cancer — What Should I Eat?'). It sounds like [other countries](https://www.washingtonpost.com/world/2019/06/04/china-warns-against-traveling-us-citing-shootings-robberies-theft/ 'Washington Post: China warns against traveling to the U.S., citing \‘shootings, robberies and theft\’') are taking note as well.
 
 I don't think death is nearly as common or likely as they believe so I'm going to be look at deaths in my corner of the world to give a general idea of the state of things in the past 17 years. By using data gathered from the CDC on California deaths I intend to give a clear view on death, it's most commonly talked about causes, and it's general probability against the surviving population. From what I've read in the past I believe the most likely causes of death are heart related illness and motor-vehicle collisions, and I'll compare that with what I believe most people would worry about; homicide and terrorism. (Well, I would do terrorism, but there's actually no listed deaths for terrorism in California, so that makes a great start!)
 
@@ -37,7 +35,7 @@ While not a surprise, this does show how a population influences the appearance 
 
 Overview of Infants >1 y/o in San Diego | Of those, the top 5 causes of Death in 2016
 :-------------------------:|:-------------------------:
- ![Graph_SD_2016_1](/img/Graph_SD_2016_1.png)|![Donut_SD_2016_1](/img/Donut_SD_2016_1.png)
+ ![Graph_SD_2016_1](/img/Graph_SD_1.png)|![Donut_SD_2016_1](/img/Donut_SD_2016_1.png)
 
 So, I'd say we have a good sign here. In the most recent year for the dataset we aren't even up to 5 causes of death! And of those, there's only 40 that died, all of which were medical issues with two of them happening prior to birth. If we look at the graph we can also see that it's not really changing much over time. I mean sure, it looks like it's bouncing around but the sums are pretty low compared to what we saw earlier, and they're not increasing at all! Seventeen years and the average is relatively stable. I'd take that as a sign that the majority of these deaths aren't being influenced by anything in particular.
 
@@ -46,7 +44,7 @@ I know dead babies isn't exactly a heartwarming story to talk about but just goi
 
 Overview of people 85+ y/o in San Diego | Of those, the top 5 causes of Death in 2016
 :-------------------------:|:-------------------------:
-![Graph_SD_2016_85+](/img/Graph_SD_2016_85+.png) | ![Donut_SD_2016_85+](/img/Donut_SD_2016_85+.png)
+![Graph_SD_2016_85+](/img/Graph_SD_85+.png) | ![Donut_SD_2016_85+](/img/Donut_SD_2016_85+.png)
 
 In this case we can see not only is there a top five, but that there's a whole 85 other causes of death not included in the list. If I put them all there, this chart would quickly become impossible to read, but on top of that we can see that there's a trend going upwards for people in this age group.
 
@@ -86,15 +84,11 @@ And here we see the problem with miscellaneous categories. It looks like there c
 ![img](/img/Graph_C_Suicide.png)
 
 
-Lastly we see that people's favorite flavor of death is strangulation, though maybe that's related in some way to autoerotic asphyxiation? Either way, it's followed soon after by handguns. I'm actually not sure why someone would choose strangulation personally, I mean, you have to sit around and wait for it to happen at that point, right? I mean I guess shooting yourself isn't much better; you'd leave a mess for your family to clean up!
-
-Not really a joke, actually. My grandma some years ago had to help a friend clean up her husband's body after he shot himself with a shotgun. The police or whoever may take the body, but they aren't going to pick up the chunks or do a deep clean on your carpet. Pretty grizzly to think about, eh? Probably better not doing that to people you ostensibly care about.
+Lastly we see that people's favorite flavor of death is strangulation, though maybe that's related in some way to autoerotic asphyxiation? Either way, it's followed soon after by handguns. I'm actually not sure why someone would choose strangulation personally, I mean, you have to sit around and wait for it to happen at that point, right? I mean I guess shooting yourself isn't much better; you'd leave a mess for your family to clean up.
 
 
 ## In Conclusion
 
-The reason I'm bringing these up like this isn't really to show off all the ways you can die or to be edgy, it's to show how unlikely it is. Even at the upper ranges of 10% with the elderly, there's a significant chunk of the population that actually stands an overwhelming chance of surviving each year. The highest rate of deaths from what we've viewed here come from heart disease, and that's very preventable. I'm certainly not in any position to be critiquing people's lifestyles, and for the most part I don't, but I think if people were really afraid of dying they'd be more fearful of the ways that claim most people. Even saying that though, I know in my case I'm the same way; staring down the barrel of a gun with your family behind you is a much more real threat than a hundred-thousand burgers hardening your arteries.
-
-What I'm getting at here is there's a chance for you to die, but there's more chances for you to live. I'm not going to tell you what you really need to do, but I will suggest that you take responsibility for yourself and your actions and accept that, regardless of the outcome. It's certainly helped me to relax and be alright with where I am in life, even as I'm trying to get somewhere I dream to be. So in the end, remember,
+The reason I'm bringing these up like this isn't really to show off all the ways people can die or to be edgy, it's to show how unlikely it is. Even at the upper ranges of 10% with the elderly, there's a significant part of the population that actually stands an overwhelming chance of surviving each year. The highest rate of deaths from what we've viewed here come from heart disease, and that's very preventable. I'm certainly not in any position to be critiquing people's lifestyles, and for the most part I don't, but I think if people were really afraid of dying they'd be more fearful of the ways that claim most people. Even saying that though, I know in my case I'm the same way; staring down the barrel of a gun with your family behind you is a much more real threat than a hundred-thousand burgers hardening your arteries. What I'm getting at here is there's a chance for people to die, but there's a greater chance for people to live. So in the end, remember,
 
 ![dontgiveup](/img/dont-give-up-skeleton.png 'don\'t give up, skeleton!'){: .center-block :}
