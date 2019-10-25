@@ -56,26 +56,36 @@ Since this age group is partly unbounded, my guess is that as our medical techno
 
 ### Cancer
 ![img](/img/Graph_C_Cancer.png)
+
+
 BY FAR the biggest cause of death with cancer is lung cancer. Breast cancer is a far second at maybe a fourth that of lung cancer. I reduced the types of cancer here because listing all of them balloons the graph's legend out and it wont really say any more than this does, not unless you want a deeper look that is.
 
 ### Heart Failure
 ![img](/img/Graph_C_MI.png)
+
+
 Now this is a comforting one to see. Well, the trend is anyway. At about 18,000 deaths in 2016 that's still far and away the highest cause of death of any I've looked at here, even if it's trending downward. However, it *is* going down, which is fantastic to see. On a country scale heart disease in general accounts for about 600,000 people, and even on a state scale it's pretty clear that if you've got some fear of death, it should be directed this way.
 
 I don't like exercise any more than most Americans, but clearly we need it. Modern medicine can only go so far before we need to start replacing hearts and veins to keep us going, and what's it matter then if we can't move on our own anymore? I've met people like that in the past, and while it didn't exactly scare me straight, I'm certainly up for a bit of exercise every now and then to keep that from being me.
 
 ### Car crashes
 ![img](/img/Graph_C_MVC.png)
+
+
 This one was actually much lower than I thought it'd be, but maybe that's just the news on the I-5 that's got me thinking that way. That and car crashes are generally pretty scary to be around when it happens, but here we can see that pedestrians getting hit are the highest, with the second highest being a miscellaneous line for unspecified pedestrian collisions. Additionally it looks like the driver tends to get killed more often than passengers, though I think I'd chalk that up to people not really car-pooling too often from what I've seen.
 
 Fortunately for motorcyclists they have a pretty low rate here, so good on you guys!
 
 ### Homicide
 ![img](/img/Graph_C_Homicide.png)
+
+
 And here we see the problem with miscellaneous categories. It looks like there could be a wide variety of things that are all getting thrown into the same thing for ease of paperwork. I'm really not sure how to take this one, but at the very least I can say this one doesn't hold suicides in that category.
 
 ### Suicide
 ![img](/img/Graph_C_Suicide.png)
+
+
 Lastly we see that people's favorite flavor of death is strangulation, though maybe that's related in some way to autoerotic asphyxiation? Either way, it's followed soon after by handguns. I'm actually not sure why someone would choose strangulation personally, I mean, you have to sit around and wait for it to happen at that point, right? I mean I guess shooting yourself isn't much better; you'd leave a mess for your family to clean up!
 
 Not really a joke, actually. My grandma some years ago had to help a friend clean up her husband's body after he shot himself with a shotgun. The police or whoever may take the body, but they aren't going to pick up the chunks or do a deep clean on your carpet. Pretty grizzly to think about, eh? Probably better not doing that to people you ostensibly care about.
