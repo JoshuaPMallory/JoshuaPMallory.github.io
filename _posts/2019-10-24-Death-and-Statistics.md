@@ -21,7 +21,7 @@ I intend to show whether or not either view is correct.
 
 So to start off with I want to show an overview of the general population and their deaths, then show what people would most fear dying by; traumatic deaths.
 
-![California-overview](/img/California-overview-by-age.png){: .center-block :}
+![California-overview](/img/California-overview-by-age2.png){: .center-block :}
 
 So with this we can see that across all of California the age groups dying the most tend to be in the upper age ranges, and as people get older they die more often. Pretty much what one would expect. The increase looks to be relatively exponential as well. 35 to 44 is barely off the ground compared to everything below it, while 45 to 54 is about double. As I'll show in a later chart, the reason for this appears to largely be due to medical issues rather than traumatic injury, which is again what one might expect.
 
