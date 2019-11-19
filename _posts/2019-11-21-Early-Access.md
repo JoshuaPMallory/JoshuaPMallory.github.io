@@ -2,13 +2,11 @@
 layout: post
 title: Early Access
 subtitle: Lambda School - Data Science 9
-gh-repo: JoshuaPMallory/Early_Access
+gh-repo: JoshuaPMallory/Ex_Early_Access_Probability
 gh-badge: [fork]
-img: /img/unfinished.jpg
+image: /img/unfinished.jpg
 tags: [Data Science, Lambda School]
 ---
-
-
 
 # Guide in
 If you spend any time looking for new games to play you'll know Early Access games have become pretty common thing now, but most of those games haven't actually turned to a full release.
