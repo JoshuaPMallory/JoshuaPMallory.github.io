@@ -4,7 +4,7 @@ title: Early Access
 subtitle: Lambda School - Data Science 9
 gh-repo: JoshuaPMallory/Ex_Early_Access_Probability
 gh-badge: [fork]
-image: /img/unfinished.jpg
+image: /img/unfinished.png
 tags: [Data Science, Lambda School]
 ---
 
