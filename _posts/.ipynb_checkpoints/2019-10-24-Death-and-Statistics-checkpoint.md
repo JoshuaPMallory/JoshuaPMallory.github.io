@@ -8,7 +8,6 @@ image: /img/there-there-skeleton.png
 tags: [Data Science, Lambda School]
 ---
 
-
 From my corner of the world in California I think the media presents a hostile view of life; that shootings are happening more frequently than ever, that we're being manipulated by politicians and corporations, and that an excess diet of [eggs](https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs 'Physicians Committee: Health Concerns with Eggs') is going to give us cancer. Or, wait... [I guess they're good for you now](https://health.clevelandclinic.org/i-have-cancer-what-should-i-eat-2/ 'Cleveland Clinic: I Have Cancer — What Should I Eat?'). It sounds like [other countries](https://www.washingtonpost.com/world/2019/06/04/china-warns-against-traveling-us-citing-shootings-robberies-theft/ 'Washington Post: China warns against traveling to the U.S., citing \‘shootings, robberies and theft\’') are taking note as well. So...
 
 **Is there anything about death in recent years that we should actually be worried about?**
