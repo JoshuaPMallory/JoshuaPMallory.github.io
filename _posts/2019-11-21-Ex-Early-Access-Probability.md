@@ -38,7 +38,7 @@ This next plot is cut down substantially for readability, but suffice to say tha
 Now we can see that as we have more and more people, generally, the metacritic score will be higher. However we also see that it's marginal at best; The difference between one and several thousand is maybe a point or two on metacritic. So while score matters, and the number of people matter, one does not cause the other.
 
 
-![year_meta](pdp_interact_year_meta.png){: .center-block :}
+![year_meta](/img/pdp_interact_year_meta.png){: .center-block :}
 
 
 
