@@ -21,7 +21,7 @@ It's important to note that just because a game releases doesn't mean that it's 
 I started with a dataset of steam games from [Craig Kelly](https://data.world/craigkelly/steam-game-data) at data.world and added onto it with some information from [SteamSpy](https://steamspy.com/about). SteamSpy definitely had a lot more recent data but unfortunately it's a pain to get any of it. Regardless I used two models on my data.
 
 
-![force_plot](row_0_force_plot.png){: .center-block :}
+![force_plot](/img/row_0_force_plot.png){: .center-block :}
 
 To start with I made a force plot to see more clearly which of the features made the most difference. For this we can see metacritic makes a big difference in the outcome, followed closely by the number of actual owners. 
 
