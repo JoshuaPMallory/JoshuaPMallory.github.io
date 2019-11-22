@@ -30,11 +30,11 @@ Recall:|1.0
 Baselines are what the minimum effort would get us. If we can't beat that with our model, we're doing something wrong. In this case it'd get us about 30% accuracy when looking for games that have left Early Access in a random chunk of our data, so if you're wondering where the 15% came from before, that was over the total games and total Early Access games on steam. My dataset doesn't have all sixty-thousand games and this random selection happens to get more of the full releases.
 
 
-Metrics|Random Forest Classifier|XGBoost Classifier|Logistic Regression
+Validation Metrics|Random Forest Classifier|XGBoost Classifier|Logistic Regression
 :-----:|:----------------------:|:----------------:|:-----------------:
-Validation Accuracy:|96%|95%|89%
-Validation Precision:|97%|92%|88%
-Validation Recall:|90%|94%|76%
+Accuracy:|96%|95%|89%
+Precision:|97%|92%|88%
+Recall:|90%|94%|76%
 
 After running these three models we got these scores. For claficication, **accuracy** measures how much of the data was correctly identified in our validation set. With each at least near 90% we have a pretty decent level of confidence. But **precision** tells us how many were correctly identified versus not. For example with the Random Forest Classifier we correctly identified 97% Ex Early Access games while falsly marking another 3% as having released. Finally **recall** tells us how much of the total in the category we care about were selected. For example, in the Logistic Regression model we got 76% of the Ex Early Access games, but we missed another 24% of them.
 
