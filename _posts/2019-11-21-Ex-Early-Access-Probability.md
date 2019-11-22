@@ -27,16 +27,20 @@ Accuracy:|0.3107932379713914
 Precision:|0.3107932379713914
 Recall:|1.0
 
-Baselines just help us get an idea of what the minimum effort would get us. In this case it'd get us about 30% accuracy when looking for games that have left Early Access in a random chunk of our data, so if you're wondering where the 15% came from before, that's over the total, which means this random selection happened to get more of them. Plus, I don't have all 60,000 games in this dataset.
+Baselines are what the minimum effort would get us. If we can't beat that with our model, we're doing something wrong. In this case it'd get us about 30% accuracy when looking for games that have left Early Access in a random chunk of our data, so if you're wondering where the 15% came from before, that was over the total games and total Early Access games on steam. My dataset doesn't have all sixty-thousand games and this random selection happens to get more of the full releases.
 
 
 Metrics|Random Forest Classifier|XGBoost Classifier|Logistic Regression
 :-----:|:----------------------:|:----------------:|:-----------------:
-Validation Accuracy:|0.9571150097465887|0.9532163742690059|0.8830409356725146
-Validation Precision:|0.9691358024691358|0.9213483146067416|0.88
-Validation Recall:|0.9022988505747126|0.9425287356321839|0.7586206896551724
+Validation Accuracy:|96%|95%|89%
+Validation Precision:|97%|92%|88%
+Validation Recall:|90%|94%|76%
 
-As for the actual data, 
+After running these three models we got these scores. For claficication, **accuracy** measures how much of the data was correctly identified in our validation set. With each at least near 90% we have a pretty decent level of confidence. But **precision** tells us how many were correctly identified versus not. For example with the Random Forest Classifier we correctly identified 97% Ex Early Access games while falsly marking another 3% as having released. Finally **recall** tells us how much of the total in the category we care about were selected. For example, in the Logistic Regression model we got 76% of the Ex Early Access games, but we missed another 24% of them.
+
+## Plots
+
+### Force Plots
 
 ![force_plot](/img/row_0_force_plot.png){: .center-block :}
 
@@ -52,7 +56,7 @@ Here we also see that the number of years since it's release into Early Access i
 
 [comment]: # (I might still try to use https://steam.internet.byu.edu/ too, since it claims to use all of Steam's game data.)
 
----
+### PDP Plots
 
 ![years_since_release](/img/pdp_isolate_years_since_release.png){: .center-block :}
 
@@ -72,42 +76,16 @@ Now we can see that as we have more and more people, generally, the metacritic s
 
 ![year_meta](/img/pdp_interact_year_meta.png){: .center-block :}
 
+Probably the most interesting one here for the interact plots. We have Metacritic on the y axis and the years since a game's release on the x axis. So what we're seeing is that if a game is scoring highly, it's very likely to release. If a game is taking awhile, it _can_ become more likely to release, but not to the same level. When both are combined however, it's significantly more likely. 
 
+At around the nine year mark though we start hitting the outliers that overwhelm this graph and pull it out to the right, there's maybe about 11 of them in total.
 
+### Unfortunately...
+![Nice_try](/img/nice_try.jpg){: .center-block :}
 
+It didn't work out.
 
-
-
-
-
-### Random Forest Classifier
-Here is where my findings on my Random Forest Classifier model will go.
-
-
-### Logistic Regression
-Here is where my findings on my Logistic Regression model will go.
-
-
-## Features that I've found made a difference
-Here I'll show a force plot or two, as well as a PDP plot and explain what we're looking at.
-
-
-
-
-
-### How it didn't work out
-
-
-
-
-
-
-## Other stuff?
-- Maybe I should block each type of game by it's genre?
-We could take each group based on it's genre and run the numbers, normalize them, and compare each genre's chances of releasing.
-
-- Asset flips
-
+The main problem I came to realize in my project was that I was using information from these games that I wouldn't have at the start of any game's Early Access. I wanted to know the probability that a game would actually survive to 1.0, but if I didn't have this information prior such as the metacritic score, I couldn't actually take any action with these models. Which makes them equivalent to Sterling engines; Very neat, but completely useless for any serious application.
 
 # Conclusion
-This is where my conclusion will go when it's actually ready to be written.
+The only way you're going to get something actionable from your data is if you actually work through the problem in your head, try to figure out what would tell you without machine learning in the first place, then try to test and be sure you're on the right track before you go out crafting a nice, well-lit, finely dug hole in the ground.
