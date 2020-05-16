@@ -4,7 +4,6 @@ title: Sanctions Explorer
 subtitle: Lambda School - Labs 22
 image: /img/sanctions.jpg
 tags: [Lambda School, C4ADS, Non-Profit]
-comments: true
 ---
 
 
